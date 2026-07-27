@@ -1,7 +1,7 @@
 import "./Projects.css";
 
 import EmployeeImage from "../assets/employee-dashboard.png";
-import VideoLibraryImage from "../assets/video-library.png";
+import VideoLibraryImage from "../assets/Video-Library.png";
 import TodoImage from "../assets/todo-app.png";
 
 import {
