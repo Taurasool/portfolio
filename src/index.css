@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#08111f;
+
+    color:white;
+
+    font-family:Inter,sans-serif;
+
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+img{
+    max-width:100%;
+}
+
+button{
+    border:none;
+    cursor:pointer;
+}
+
+section{
+
+    padding:100px 0;
+
+}

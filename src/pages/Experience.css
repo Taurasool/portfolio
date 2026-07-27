@@ -1,0 +1,416 @@
+/* ==========================
+   EXPERIENCE SECTION
+========================== */
+
+.experience-section {
+    background: #0d1117;
+    color: #fff;
+    padding: 120px 0;
+    position: relative;
+}
+
+.experience-heading{
+    text-align:center;
+    margin-bottom:80px;
+}
+
+.experience-tag{
+
+    display:inline-block;
+    padding:10px 24px;
+
+    border-radius:30px;
+
+    color:#00d9ff;
+
+    border:1px solid rgba(0,217,255,.35);
+
+    background:rgba(0,217,255,.08);
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+    font-weight:600;
+
+}
+
+.experience-heading h2{
+
+    margin-top:25px;
+
+    font-size:50px;
+
+    font-weight:700;
+
+}
+
+.experience-heading p{
+
+    margin:20px auto 0;
+
+    max-width:650px;
+
+    color:#8b949e;
+
+    line-height:1.8;
+
+    font-size:17px;
+
+}
+
+/* ==========================
+      TIMELINE
+========================== */
+
+.timeline{
+
+    position:relative;
+
+    max-width:1000px;
+
+    margin:auto;
+
+}
+
+.timeline-line{
+
+    position:absolute;
+
+    left:45px;
+
+    top:0;
+
+    bottom:0;
+
+    width:3px;
+
+    background:#00d9ff;
+
+    opacity:.3;
+
+}
+
+.timeline-dot{
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:#00d9ff;
+
+    position:absolute;
+
+    left:37px;
+
+    top:40px;
+
+    box-shadow:0 0 18px #00d9ff;
+
+}
+
+/* ==========================
+      CARD
+========================== */
+
+.experience-card{
+
+    margin-left:90px;
+
+    display:flex;
+
+    gap:35px;
+
+    background:#161b22;
+
+    border:1px solid #30363d;
+
+    border-radius:18px;
+
+    padding:40px;
+
+    transition:.35s;
+
+}
+
+.experience-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#00d9ff;
+
+    box-shadow:0 25px 60px rgba(0,217,255,.15);
+
+}
+
+/* ==========================
+      LEFT
+========================== */
+
+.company-icon{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border:2px solid #00d9ff;
+
+    background:rgba(0,217,255,.08);
+
+}
+
+.company-icon svg{
+
+    font-size:38px;
+
+    color:#00d9ff;
+
+}
+
+/* ==========================
+      RIGHT
+========================== */
+
+.experience-right{
+
+    flex:1;
+
+}
+
+.experience-right h3{
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+.experience-right h4{
+
+    margin-top:10px;
+
+    color:#00d9ff;
+
+    font-size:22px;
+
+    font-weight:600;
+
+}
+
+/* ==========================
+      META
+========================== */
+
+.experience-meta{
+
+    display:flex;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    margin:25px 0;
+
+}
+
+.experience-meta span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#8b949e;
+
+    font-size:15px;
+
+}
+
+.experience-meta svg{
+
+    color:#00d9ff;
+
+}
+
+/* ==========================
+      LIST
+========================== */
+
+.experience-right ul{
+
+    margin:0;
+
+    padding-left:22px;
+
+}
+
+.experience-right li{
+
+    margin-bottom:15px;
+
+    color:#c9d1d9;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+}
+
+/* ==========================
+      TECH STACK
+========================== */
+
+.tech-title{
+
+    margin-top:35px;
+
+    margin-bottom:20px;
+
+    font-size:18px;
+
+    color:#00d9ff;
+
+    font-weight:600;
+
+}
+
+.tech-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.tech-pill{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:12px 18px;
+
+    border-radius:12px;
+
+    background:#0d1117;
+
+    border:1px solid #30363d;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.tech-pill svg{
+
+    color:#00d9ff;
+
+    font-size:20px;
+
+}
+
+.tech-pill:hover{
+
+    border-color:#00d9ff;
+
+    transform:translateY(-5px);
+
+}
+
+/* ==========================
+      RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+.timeline-line{
+
+display:none;
+
+}
+
+.timeline-dot{
+
+display:none;
+
+}
+
+.experience-card{
+
+margin-left:0;
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.company-icon{
+
+margin:auto;
+
+}
+
+.experience-meta{
+
+justify-content:center;
+
+}
+
+.experience-right ul{
+
+text-align:left;
+
+}
+
+.tech-list{
+
+justify-content:center;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.experience-heading h2{
+
+font-size:36px;
+
+}
+
+.experience-card{
+
+padding:25px;
+
+}
+
+.experience-right h3{
+
+font-size:25px;
+
+}
+
+.experience-right h4{
+
+font-size:18px;
+
+}
+
+}

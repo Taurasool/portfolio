@@ -1,0 +1,335 @@
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: #0d1117;
+    color: #fff;
+    padding: 120px 0 80px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Background Grid */
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: .5;
+    pointer-events: none;
+}
+
+.container,
+.row {
+    position: relative;
+    z-index: 2;
+}
+
+/* ==========================
+   LEFT SIDE
+========================== */
+
+.available-badge {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 30px;
+    background: rgba(0,217,255,.08);
+    border: 1px solid rgba(0,217,255,.35);
+    color: #53f8ff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.hero-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -2px;
+}
+
+.hero-title span {
+    color: #00d9ff;
+}
+
+.hero-subtitle {
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #f5f5f5;
+}
+
+.hero-description {
+    max-width: 560px;
+    color: #9ca3af;
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.hero-buttons {
+    display: flex;
+    gap: 18px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.hire-btn {
+    background: #00d9ff;
+    color: #111;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all .35s ease;
+}
+
+.hire-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,217,255,.35);
+}
+
+.project-btn {
+    border: 2px solid #00d9ff;
+    color: #00d9ff;
+    background: transparent;
+    padding: 14px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all .35s ease;
+}
+
+.project-btn:hover {
+    background: #00d9ff;
+    color: #111;
+    transform: translateY(-5px);
+}
+
+/* ==========================
+   TECH STACK
+========================== */
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 45px;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #161b22;
+    border: 1px solid #30363d;
+    padding: 12px 18px;
+    border-radius: 12px;
+    transition: all .35s ease;
+    cursor: pointer;
+}
+
+.tech-item svg {
+    font-size: 22px;
+    color: #00d9ff;
+}
+
+.tech-item:hover {
+    transform: translateY(-6px);
+    border-color: #00d9ff;
+    box-shadow: 0 10px 25px rgba(0,217,255,.15);
+}
+
+
+
+
+/* ==========================
+   RIGHT SIDE - CODE CARD
+========================== */
+
+.code-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.code-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    border-color: #00d9ff;
+    box-shadow:
+        0 0 30px rgba(0, 217, 255, 0.20),
+        0 30px 80px rgba(0, 217, 255, 0.25);
+}
+
+.code-card:hover .editor-header {
+    background: rgba(0, 217, 255, 0.05);
+}
+
+.code-card:hover .github-box {
+    color: #00d9ff;
+}
+
+/* ==========================
+   EDITOR HEADER
+========================== */
+
+.editor-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 20px;
+    border-bottom: 1px solid #30363d;
+    transition: all .35s ease;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red {
+    background: #ff5f56;
+}
+
+.yellow {
+    background: #ffbd2e;
+}
+
+.green {
+    background: #27c93f;
+}
+
+.file-name {
+    margin-left: 15px;
+    color: #8b949e;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* ==========================
+   EDITOR BODY
+========================== */
+
+.editor-body {
+    padding: 30px;
+    font-family: Consolas, monospace;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.editor-body p {
+    margin-bottom: 8px;
+}
+
+.blue {
+    color: #79c0ff;
+}
+
+.orange {
+    color: #ffa657;
+}
+
+/* Code Text Green */
+.editor-body .green {
+    color: #7ee787;
+}
+
+/* ==========================
+   GITHUB BOX
+========================== */
+
+.github-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 25px;
+    border-top: 1px solid #30363d;
+    background: #0d1117;
+    color: #c9d1d9;
+    font-size: 15px;
+    transition: all .35s ease;
+}
+
+.github-box svg {
+    color: #00d9ff;
+    font-size: 22px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 991px) {
+
+    .hero-section {
+        text-align: center;
+        padding-top: 120px;
+    }
+
+    .hero-title {
+        font-size: 52px;
+    }
+
+    .hero-subtitle {
+        font-size: 26px;
+    }
+
+    .hero-description {
+        margin: 0 auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .tech-stack {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .code-card {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .hero-title {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 22px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .editor-body {
+        padding: 20px;
+        font-size: 13px;
+    }
+
+    .github-box {
+        font-size: 13px;
+        padding: 15px 20px;
+    }
+}

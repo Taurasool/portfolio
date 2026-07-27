@@ -1,0 +1,444 @@
+/* ==========================================
+   CONTACT SECTION
+========================================== */
+
+.contact-section {
+    padding: 120px 0;
+    background: #0d1117;
+    color: #ffffff;
+}
+
+
+.contact-link{
+
+    color:#8b949e;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-size:15px;
+
+}
+
+.contact-link:hover{
+
+    color:#00d9ff;
+
+}
+
+/* ==========================================
+   SECTION HEADING
+========================================== */
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.contact-tag {
+    display: inline-block;
+    padding: 10px 24px;
+    border: 1px solid rgba(0, 217, 255, .35);
+    border-radius: 30px;
+    background: rgba(0, 217, 255, .08);
+    color: #00d9ff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.contact-heading h2 {
+    margin-top: 25px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.contact-heading p {
+    max-width: 700px;
+    margin: 20px auto 0;
+    color: #8b949e;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* ==========================================
+   CONTACT CARD
+========================================== */
+
+.contact-info,
+.contact-form {
+
+    background: #161b22;
+
+    border: 1px solid #30363d;
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    transition: .35s ease;
+
+}
+
+.contact-info:hover,
+.contact-form:hover {
+
+    transform: translateY(-10px);
+
+    border-color: #00d9ff;
+
+    box-shadow:
+        0 0 20px rgba(0,217,255,.15),
+        0 25px 60px rgba(0,217,255,.12);
+
+}
+
+/* ==========================================
+   CARD TITLE
+========================================== */
+
+.contact-info h3,
+.contact-form h3 {
+
+    font-size: 30px;
+
+    color: #00d9ff;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+
+    position: relative;
+
+}
+
+.contact-info h3::after,
+.contact-form h3::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -10px;
+
+    width: 60px;
+
+    height: 3px;
+
+    background: #00d9ff;
+
+    border-radius: 20px;
+
+}
+
+.contact-info>p {
+
+    color: #8b949e;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+
+}
+
+/* ==========================================
+   INFO ITEM
+========================================== */
+
+.info-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+
+}
+
+.info-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    min-width: 50px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: rgba(0,217,255,.08);
+
+    border: 1px solid rgba(0,217,255,.25);
+
+    color: #00d9ff;
+
+    font-size: 20px;
+
+    transition: .35s;
+
+}
+
+.info-item:hover .info-icon {
+
+    background: #00d9ff;
+
+    color: #0d1117;
+
+    transform: rotate(10deg) scale(1.08);
+
+}
+
+.info-item h5 {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 18px;
+
+}
+
+.info-item span {
+
+    color: #8b949e;
+
+    font-size: 15px;
+
+}
+
+/* ==========================================
+   SOCIAL LINKS
+========================================== */
+
+.social-links {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 35px;
+
+}
+
+.social-links a {
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    background: #0d1117;
+
+    border: 1px solid #30363d;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #00d9ff;
+
+    font-size: 20px;
+
+    text-decoration: none;
+
+    transition: .35s;
+
+}
+
+.social-links a:hover {
+
+    background: #00d9ff;
+
+    color: #0d1117;
+
+    transform: translateY(-6px) scale(1.08);
+
+    box-shadow: 0 0 20px rgba(0,217,255,.35);
+
+}
+
+/* ==========================================
+   FORM
+========================================== */
+
+.form-control {
+
+    background: #0d1117 !important;
+
+    color: #ffffff !important;
+
+    border: 1px solid #30363d !important;
+
+    border-radius: 12px;
+
+    padding: 15px 18px;
+
+    transition: .3s;
+
+    box-shadow: none !important;
+
+}
+
+.form-control::placeholder {
+
+    color: #6e7681;
+
+}
+
+.form-control:focus {
+
+    background: #0d1117 !important;
+
+    color: #ffffff !important;
+
+    border-color: #00d9ff !important;
+
+    box-shadow: 0 0 0 4px rgba(0,217,255,.10) !important;
+
+}
+
+textarea.form-control {
+
+    resize: none;
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.contact-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    background: #00d9ff;
+
+    color: #0d1117;
+
+    padding: 16px 38px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    transition: .35s;
+
+}
+
+.contact-btn:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(0,217,255,.35);
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:992px){
+
+    .contact-section{
+
+        padding:100px 0;
+
+    }
+
+    .contact-heading h2{
+
+        font-size:42px;
+
+    }
+
+    .contact-info{
+
+        margin-bottom:25px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .contact-heading h2{
+
+        font-size:36px;
+
+    }
+
+    .contact-info,
+    .contact-form{
+
+        padding:30px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .contact-section{
+
+        padding:80px 0;
+
+    }
+
+    .contact-heading h2{
+
+        font-size:30px;
+
+    }
+
+    .contact-heading p{
+
+        font-size:15px;
+
+    }
+
+    .contact-info h3,
+    .contact-form h3{
+
+        font-size:24px;
+
+    }
+
+    .contact-btn{
+
+        width:100%;
+
+    }
+
+}
