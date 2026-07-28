@@ -82,7 +82,7 @@ const Navbar = () => {
 
   {/* Resume */}
  <a
-  href="/tauseefmern.pdf"
+  href="/TauseefMern.pdf"
   target="_blank"
   rel="noopener noreferrer"
 >
