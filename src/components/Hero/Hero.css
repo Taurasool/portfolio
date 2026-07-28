@@ -79,6 +79,16 @@
    BUTTONS
 ========================== */
 
+/* Hero Buttons */
+
+
+.hire-btn,
+.project-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
 .hero-buttons {
     display: flex;
     gap: 18px;
