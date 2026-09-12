@@ -40,7 +40,7 @@
     font-weight: 500;
     padding: 8px 10px !important;
     transition: 0.3s;
-    border-bottom: 2px solid transparent;
+    position: relative;
 }
 
 .nav-link:hover {
@@ -49,38 +49,42 @@
 
 .nav-link.active {
     color: #44d9ff !important;
-    border-bottom: 2px solid #44d9ff;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #44d9ff;
+    transform: translateX(-50%);
+    transition: 0.3s ease;
+}
+
+.nav-link.active::after {
+    width: 40px;
 }
 
 /* ==========================
    Icons
 ========================== */
 
-.nav-icon{
-    color:#ffffff;
-    font-size:20px;
-    text-decoration:none;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    transition:all .3s ease;
-}
-
-.nav-icon:hover{
-    color:#00d9ff;
-    transform:translateY(-3px) scale(1.1);
-}
-
-/* .nav-icon {
+.nav-icon {
     color: #ffffff;
-    font-size: 19px;
-    cursor: pointer;
-    transition: 0.3s;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
 }
 
 .nav-icon:hover {
-    color: #44d9ff;
-} */
+    color: #00d9ff;
+    transform: translateY(-3px) scale(1.1);
+}
 
 /* ==========================
    Resume Button
@@ -124,7 +128,6 @@
 ========================== */
 
 @media (max-width: 991px) {
-
     .navbar-collapse {
         background: #0b1120;
         margin-top: 15px;
@@ -149,44 +152,10 @@
     .navbar-brand.logo {
         font-size: 1.7rem;
     }
-
 }
 
-@media (max-width:576px){
-
-    .resume-btn{
-        width:100%;
+@media (max-width: 576px) {
+    .resume-btn {
+        width: 100%;
     }
-
-}
-
-
-
-
-
-
-
-.nav-link {
-    color: white !important;
-    position: relative;
-}
-
-.nav-link.active {
-    color: #44d9ff !important;
-}
-
-.nav-link::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -8px;
-    width: 0;
-    height: 2px;
-    background: #44d9ff;
-    transform: translateX(-50%);
-    transition: .3s;
-}
-
-.nav-link.active::after {
-    width: 40px;
 }

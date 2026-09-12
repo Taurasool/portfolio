@@ -1,7 +1,10 @@
-.app{
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #08111f;
+}
 
-    min-height:100vh;
-
-    background:#08111f;
-
+.main-content {
+  flex: 1;
 }
