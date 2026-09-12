@@ -1,0 +1,192 @@
+/* ==========================
+   Navbar
+========================== */
+
+.custom-navbar {
+    background: #0b1120;
+    border-bottom: 1px solid #1e293b;
+    padding: 14px 0;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+/* ==========================
+   Logo
+========================== */
+
+.navbar-brand.logo {
+    color: #ffffff !important;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+.navbar-brand.logo:hover {
+    color: #44d9ff !important;
+}
+
+/* ==========================
+   Navigation
+========================== */
+
+.navbar-nav {
+    gap: 18px;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 10px !important;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+    color: #44d9ff !important;
+}
+
+.nav-link.active {
+    color: #44d9ff !important;
+    border-bottom: 2px solid #44d9ff;
+}
+
+/* ==========================
+   Icons
+========================== */
+
+.nav-icon{
+    color:#ffffff;
+    font-size:20px;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:all .3s ease;
+}
+
+.nav-icon:hover{
+    color:#00d9ff;
+    transform:translateY(-3px) scale(1.1);
+}
+
+/* .nav-icon {
+    color: #ffffff;
+    font-size: 19px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-icon:hover {
+    color: #44d9ff;
+} */
+
+/* ==========================
+   Resume Button
+========================== */
+
+.resume-btn {
+    background: #22d3ee;
+    color: #08111f;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.resume-btn:hover {
+    background: #67e8f9;
+    transform: translateY(-2px);
+}
+
+/* ==========================
+   Mobile Button
+========================== */
+
+.navbar-toggler {
+    border: 1px solid #44d9ff;
+    padding: 6px 10px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 991px) {
+
+    .navbar-collapse {
+        background: #0b1120;
+        margin-top: 15px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .navbar-nav {
+        gap: 10px;
+    }
+
+    .nav-link {
+        margin: 8px 0;
+    }
+
+    .d-flex {
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .navbar-brand.logo {
+        font-size: 1.7rem;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .resume-btn{
+        width:100%;
+    }
+
+}
+
+
+
+
+
+
+
+.nav-link {
+    color: white !important;
+    position: relative;
+}
+
+.nav-link.active {
+    color: #44d9ff !important;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background: #44d9ff;
+    transform: translateX(-50%);
+    transition: .3s;
+}
+
+.nav-link.active::after {
+    width: 40px;
+}
