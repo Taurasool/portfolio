@@ -2,141 +2,148 @@ import "./Experience.css";
 
 import {
   FaBriefcase,
-  FaReact,
-  FaNodeJs,
-  FaGitAlt,
+  FaGraduationCap,
 } from "react-icons/fa";
-
-import {
-  SiTypescript,
-  SiExpress,
-  SiMongodb,
-  SiBootstrap,
-} from "react-icons/si";
 
 import { MdLocationOn } from "react-icons/md";
 import { BsCalendarEvent } from "react-icons/bs";
+
+const experiences = [
+  {
+    role: "Software Developer",
+    company: "Idealleads.io",
+    dates: "Nov 2025 - Present",
+    responsibilities: [
+      "Develop responsive web applications using React.js, TypeScript, and JavaScript with reusable, component-based architecture.",
+      "Build dynamic forms with client-side validation, routing, conditional rendering, and interactive user workflows.",
+      "Integrate RESTful APIs using Axios and Fetch API for asynchronous data fetching, dynamic rendering, loading states, and error handling.",
+      "Develop responsive dashboards and interactive UI features focused on usability, cross-device compatibility, and frontend performance.",
+      "Use Git, GitHub, Postman, and Chrome DevTools for version control, API testing, debugging, and frontend optimization.",
+    ],
+    technologies: [
+      "React.js",
+      "TypeScript",
+      "JavaScript",
+      "RESTful APIs",
+      "Axios",
+      "Fetch API",
+      "Git",
+      "GitHub",
+      "Postman",
+    ],
+  },
+  {
+    role: "Web Developer Intern",
+    company: "APV Technologies Pvt. Ltd.",
+    dates: "Nov 2024 - Feb 2025",
+    location: "Lucknow, India",
+    responsibilities: [
+      "Developed responsive web interfaces using React.js, JavaScript, HTML5, CSS3, and Bootstrap.",
+      "Built multi-step registration workflows using reusable React components with form validation and dynamic data handling.",
+      "Implemented client-side routing using React Router and organized features with a modular component architecture.",
+    ],
+    technologies: [
+      "React.js",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "React Router",
+    ],
+  },
+];
 
 const Experience = () => {
   return (
     <section className="experience-section">
       <div className="container">
-        {/* HEADING */}
         <div className="experience-heading">
           <span className="experience-tag">
-            EXPERIENCE
+            EXPERIENCE &amp; EDUCATION
           </span>
 
           <h2>
-            Work Experience
+            Experience &amp; Education
           </h2>
 
           <p>
-            My professional experience in full stack development,
-            responsive web applications, and modern user interfaces.
+            My professional experience building responsive web applications,
+            along with my computer science education.
           </p>
         </div>
 
-        {/* TIMELINE */}
         <div className="timeline">
           <div className="timeline-line"></div>
-          <div className="timeline-dot"></div>
 
-          {/* EXPERIENCE CARD */}
-          <div className="experience-card">
-            {/* LEFT */}
-            <div className="experience-left">
-              <div className="company-icon">
-                <FaBriefcase />
+          {experiences.map((experience) => (
+            <div className="experience-card" key={experience.company}>
+              <div className="experience-left">
+                <div className="company-icon">
+                  <FaBriefcase />
+                </div>
+              </div>
+
+              <div className="experience-right">
+                <h3>{experience.role}</h3>
+                <h4>{experience.company}</h4>
+
+                <div className="experience-meta">
+                  <span>
+                    <BsCalendarEvent />
+                    {experience.dates}
+                  </span>
+
+                  {experience.location && (
+                    <span>
+                      <MdLocationOn />
+                      {experience.location}
+                    </span>
+                  )}
+                </div>
+
+                <ul>
+                  {experience.responsibilities.map((responsibility) => (
+                    <li key={responsibility}>{responsibility}</li>
+                  ))}
+                </ul>
+
+                <div className="tech-title">
+                  Technologies &amp; Skills
+                </div>
+
+                <div className="tech-list">
+                  {experience.technologies.map((technology) => (
+                    <span className="tech-pill" key={technology}>
+                      {technology}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
+          ))}
+        </div>
 
-            {/* RIGHT */}
-            <div className="experience-right">
-              <h3>
-                Web Developer Intern
-              </h3>
+        <div className="experience-card education-card">
+          <div className="experience-left">
+            <div className="company-icon">
+              <FaGraduationCap />
+            </div>
+          </div>
 
-              <h4>
-                APV Technologies Pvt. Ltd.
-              </h4>
+          <div className="experience-right">
+            <h3>Bachelor of Technology</h3>
+            <h4>Computer Science | Integral University</h4>
 
-              {/* META */}
-              <div className="experience-meta">
-                <span>
-                  <BsCalendarEvent />
-                  Nov 2024 - May 2025
-                </span>
+            <div className="experience-meta">
+              <span>
+                <BsCalendarEvent />
+                2024
+              </span>
 
-                <span>
-                  <MdLocationOn />
-                  Lucknow, India
-                </span>
-              </div>
-
-              {/* RESPONSIBILITIES */}
-              <ul>
-                <li>
-                  Developed responsive web applications using React.js,
-                  TypeScript, and Bootstrap.
-                </li>
-                <li>
-                  Built reusable React components and integrated REST APIs.
-                </li>
-                <li>
-                  Worked with Node.js, Express.js, and MongoDB to develop
-                  CRUD-based applications.
-                </li>
-                <li>
-                  Collaborated with team members using Git and GitHub.
-                </li>
-                <li>
-                  Improved website responsiveness and user interface
-                  performance.
-                </li>
-              </ul>
-
-              {/* TECHNOLOGIES */}
-              <div className="tech-title">
-                Technologies Used
-              </div>
-
-              <div className="tech-list">
-                <div className="tech-pill">
-                  <FaReact />
-                  React
-                </div>
-
-                <div className="tech-pill">
-                  <SiTypescript />
-                  TypeScript
-                </div>
-
-                <div className="tech-pill">
-                  <SiBootstrap />
-                  Bootstrap
-                </div>
-
-                <div className="tech-pill">
-                  <FaNodeJs />
-                  Node.js
-                </div>
-
-                <div className="tech-pill">
-                  <SiExpress />
-                  Express.js
-                </div>
-
-                <div className="tech-pill">
-                  <SiMongodb />
-                  MongoDB
-                </div>
-
-                <div className="tech-pill">
-                  <FaGitAlt />
-                  Git
-                </div>
-              </div>
+              <span>
+                <FaGraduationCap />
+                CGPA: 7.1 / 10
+              </span>
             </div>
           </div>
         </div>

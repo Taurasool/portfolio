@@ -35,16 +35,16 @@ const Hero = () => {
 
             {/* ROLE */}
             <h2 className="hero-subtitle">
-              Full Stack Developer
+              Software Developer
             </h2>
 
             {/* DESCRIPTION */}
             <p className="hero-description">
-              Full Stack Developer with experience building responsive web
-              applications using React.js, TypeScript, JavaScript, Node.js,
-              Express.js, MongoDB, and REST APIs. Skilled in developing
-              reusable React components, CRUD operations, authentication,
-              authorization, API integration, and responsive user interfaces.
+              Software Developer with 1 year of hands-on experience building
+              responsive web applications using React.js, TypeScript,
+              JavaScript, Node.js, Express.js, and MongoDB. Experienced in
+              reusable components, RESTful API integration, dynamic forms,
+              authentication, and AI-powered features.
             </p>
 
             {/* BUTTONS */}
@@ -123,7 +123,7 @@ const Hero = () => {
                 <p>
                   &nbsp;&nbsp;role:
                   <span className="green">
-                    "Full Stack Developer"
+                    "Software Developer"
                   </span>,
                 </p>
 
@@ -140,7 +140,7 @@ const Hero = () => {
                   &nbsp;&nbsp;backend:
                   [
                   <span className="orange">
-                    Node, Express, REST APIs
+                    Node, Express, RESTful APIs, AI APIs
                   </span>
                   ],
                 </p>
@@ -156,7 +156,7 @@ const Hero = () => {
                   &nbsp;&nbsp;authentication:
                   [
                   <span className="orange">
-                    JWT, Authorization
+                    JWT, Authentication, Authorization
                   </span>
                   ],
                 </p>
@@ -165,7 +165,7 @@ const Hero = () => {
                   &nbsp;&nbsp;tools:
                   [
                   <span className="orange">
-                    Git, GitHub, VS Code, Postman
+                    Git, GitHub, VS Code, Postman, Swagger
                   </span>
                   ]
                 </p>

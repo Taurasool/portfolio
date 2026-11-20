@@ -119,6 +119,10 @@
 
     margin-left:90px;
 
+    margin-bottom:30px;
+
+    position:relative;
+
     display:flex;
 
     gap:35px;
@@ -142,6 +146,42 @@
     border-color:#00d9ff;
 
     box-shadow:0 25px 60px rgba(0,217,255,.15);
+
+}
+
+.experience-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-54px;
+
+    top:40px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:#00d9ff;
+
+    box-shadow:0 0 18px #00d9ff;
+
+}
+
+.education-card{
+
+    max-width:1000px;
+
+    margin:60px auto 0;
+
+}
+
+.education-card::before{
+
+    display:none;
 
 }
 
@@ -358,6 +398,18 @@ margin-left:0;
 flex-direction:column;
 
 text-align:center;
+
+}
+
+.experience-card::before{
+
+display:none;
+
+}
+
+.education-card{
+
+margin:40px 0 0;
 
 }
 

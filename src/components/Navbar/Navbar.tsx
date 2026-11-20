@@ -98,7 +98,7 @@ const Navbar = () => {
 
             {/* Resume */}
             <a
-              href="/resume.pdf"
+              href="/TAUSEEFSDE.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="resume-btn"

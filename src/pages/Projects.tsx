@@ -4,6 +4,7 @@ import EmployeeImage from "../assets/employee-dashboard.png";
 import VideoLibraryImage from "../assets/Video-Library.png";
 import TodoImage from "../assets/todo-app.png";
 import PortfolioImage from "../assets/portfolio.png";
+import AiCareerImage from "../assets/ai-career-platform.png";
 
 import {
   FaGithub,
@@ -44,6 +45,84 @@ const Projects = () => {
         {/* ================= PROJECTS ================= */}
         <div className="row g-4">
           {/* ================= PROJECT 1 ================= */}
+          <div className="col-lg-6">
+            <div className="project-card">
+              <div className="project-image">
+                <img
+                  src={AiCareerImage}
+                  alt="Morrow AI Career and Job Discovery Platform homepage"
+                />
+              </div>
+
+              <div className="project-content">
+                <h3>
+                  AI Career &amp; Job Discovery Platform
+                </h3>
+
+                <p>
+                  Responsive career platform with job discovery, search,
+                  filtering, sorting, job details, profile management, and
+                  candidate dashboard workflows. Integrates REST and AI APIs
+                  for resume analysis, skill insights, career recommendations,
+                  and interview preparation.
+                </p>
+
+                <div className="project-tech">
+                  <span>
+                    <FaReact />
+                    React
+                  </span>
+
+                  <span>
+                    <SiTypescript />
+                    TypeScript
+                  </span>
+
+                  <span>
+                    JavaScript
+                  </span>
+
+                  <span>
+                    <SiVite />
+                    Vite
+                  </span>
+
+                  <span>
+                    <SiBootstrap />
+                    Bootstrap
+                  </span>
+
+                  <span>
+                    REST &amp; AI APIs
+                  </span>
+                </div>
+
+                <div className="project-buttons">
+                  <a
+                    href="https://github.com/Taurasool/morrow-ai-job-portal"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="github-btn"
+                  >
+                    <FaGithub />
+                    GitHub
+                  </a>
+
+                  <a
+                    href="https://morrow-ai-job-portal.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="live-btn"
+                  >
+                    <FaExternalLinkAlt />
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* ================= PROJECT 2 ================= */}
           <div className="col-lg-6">
             <div className="project-card">
               <div className="project-image">
@@ -120,7 +199,7 @@ const Projects = () => {
             </div>
           </div>
 
-          {/* ================= PROJECT 2 ================= */}
+          {/* ================= PROJECT 3 ================= */}
           <div className="col-lg-6">
             <div className="project-card">
               <div className="project-image">
@@ -196,9 +275,10 @@ const Projects = () => {
                 </div>
               </div>
             </div>
+
           </div>
 
-          {/* ================= PROJECT 3 ================= */}
+          {/* ================= PROJECT 4 ================= */}
           <div className="col-lg-6">
             <div className="project-card">
               <div className="project-image">
@@ -273,7 +353,7 @@ const Projects = () => {
             </div>
           </div>
 
-          {/* ================= PROJECT 4 ================= */}
+          {/* ================= PROJECT 5 ================= */}
           <div className="col-lg-6">
             <div className="project-card">
               <div className="project-image">
@@ -344,6 +424,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

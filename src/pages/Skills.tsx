@@ -17,6 +17,7 @@ import {
   SiExpress,
   SiMongodb,
   SiPostman,
+  SiSwagger,
   SiVercel,
 } from "react-icons/si";
 
@@ -85,17 +86,22 @@ const Skills = () => {
                   <FaBootstrap />
                   <span>Bootstrap</span>
                 </div>
+
+                <div className="skill-item">
+                  <FaCode />
+                  <span>Responsive Design</span>
+                </div>
               </div>
             </div>
           </div>
 
           {/* =========================
-              BACKEND & DATABASE
+              BACKEND, DATABASE & AI
           ========================= */}
           <div className="col-lg-4 col-md-6">
             <div className="skill-card">
               <h3>
-                Backend
+                Backend &amp; APIs
               </h3>
 
               <div className="skill-list">
@@ -116,7 +122,12 @@ const Skills = () => {
 
                 <div className="skill-item">
                   <FaCode />
-                  <span>REST APIs</span>
+                  <span>RESTful APIs</span>
+                </div>
+
+                <div className="skill-item">
+                  <FaCode />
+                  <span>API Integration</span>
                 </div>
 
                 <div className="skill-item">
@@ -128,17 +139,27 @@ const Skills = () => {
                   <FaCode />
                   <span>Authentication & Authorization</span>
                 </div>
+
+                <div className="skill-item">
+                  <FaCode />
+                  <span>AI API Integration</span>
+                </div>
+
+                <div className="skill-item">
+                  <FaCode />
+                  <span>AI-Assisted Features</span>
+                </div>
               </div>
             </div>
           </div>
 
           {/* =========================
-              TOOLS
+              TOOLS & API CLIENTS
           ========================= */}
           <div className="col-lg-4 col-md-6">
             <div className="skill-card">
               <h3>
-                Tools
+                Tools &amp; API Clients
               </h3>
 
               <div className="skill-list">
@@ -159,12 +180,22 @@ const Skills = () => {
 
                 <div className="skill-item">
                   <FaCode />
+                  <span>Axios &amp; Fetch API</span>
+                </div>
+
+                <div className="skill-item">
+                  <FaCode />
                   <span>VS Code</span>
                 </div>
 
                 <div className="skill-item">
                   <SiVercel />
                   <span>Vercel</span>
+                </div>
+
+                <div className="skill-item">
+                  <SiSwagger />
+                  <span>Swagger</span>
                 </div>
 
                 <div className="skill-item">

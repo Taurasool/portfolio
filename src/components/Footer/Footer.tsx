@@ -24,9 +24,8 @@ const Footer = () => {
             <div className="footer-about">
               <h2>Tauseef Rasool</h2>
               <p>
-                Full Stack Developer passionate about building
-                responsive, scalable and modern web applications
-                using React.js, TypeScript, Node.js and MongoDB.
+                Software Developer building responsive web applications and
+                AI-powered features with React.js, TypeScript, and RESTful APIs.
               </p>
             </div>
           </div>
